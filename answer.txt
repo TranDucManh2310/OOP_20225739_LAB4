@@ -1,0 +1,7 @@
+1. Lớp `Media` và các lớp con như `DigitalVideoDisc` cần triển khai interface `Comparable` để có thể so sánh và sắp xếp các đối tượng.
+
+2. Trong phương thức `compareTo()`, em sẽ so sánh các thuộc tính như tiêu đề, chi phí, hoặc độ dài tùy theo yêu cầu sắp xếp. Ví dụ, nếu sắp xếp theo tiêu đề, em sẽ so sánh `title` của hai đối tượng, còn nếu theo chi phí, em sẽ so sánh `cost`.
+
+3. Không, nếu dùng `Comparable`, chỉ có thể có một quy tắc sắp xếp duy nhất trong lớp. Nếu muốn nhiều quy tắc sắp xếp, em phải sử dụng `Comparator`.
+
+4. Nếu DVD có quy tắc sắp xếp riêng biệt, em sẽ ghi đè phương thức `compareTo()` trong lớp `DigitalVideoDisc` để sắp xếp theo tiêu đề, chiều dài giảm dần, rồi đến chi phí. Các loại media khác vẫn dùng phương thức sắp xếp của lớp `Media`.
