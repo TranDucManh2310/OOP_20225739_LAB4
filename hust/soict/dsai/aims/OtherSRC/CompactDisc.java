@@ -13,6 +13,10 @@ public class CompactDisc extends Disc implements Playable  {
     public String getArtist() {
         return artist;
     }
+    public String toString() {
+        return "CD [Title: " + title + ", Artist: " + artist + ", Category: " + category +
+               ", Cost: " + cost + ", Length: " + getLength() + "]";
+    }
 
     // Add track method
     public void addTrack(Track track) {

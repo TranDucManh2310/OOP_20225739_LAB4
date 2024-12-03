@@ -7,5 +7,10 @@
             System.out.println("Playing DVD: " + this.getTitle());
             System.out.println("DVD length: " + this.getLength());
         }
+        public String toString() {
+            return "DVD [Title: " + title + ", Category: " + category + ", Cost: " + cost +
+                   ", Length: " + length + ", Director: " + director + "]";
+        }
+        
     }
 
