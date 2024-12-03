@@ -1,4 +1,4 @@
-public class CompactDisc extends Disc implements Playable  {
+public class CompactDisc extends Disc implements Playable {
     private String artist;
     private ArrayList<Track> tracks;
 
